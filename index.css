@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.kontejner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 25vh;
+}
+img{
+    position: absolute;
+    padding-top: 35px;
+    padding-left: 45px;
+}
+#box{
+        color: white;
+        height: 500px;
+        width: 20%;
+}
+h1{
+    padding-left: 45px;
+    padding-top: 100px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 56px;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    width: 70%;
+    padding-left: 45px;
+    padding-top: 50px;
+    line-height: 22px;
+    font-size: 100%;
+}
+button{
+    width: 45%;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 45px;
+    margin-top: 45px;
+    border: 0;
+    cursor: pointer;
+    transition: 300ms;
+    border: 5px solid white;
+}
+.box1{
+    border-radius: 20px 0 0 20px;
+    background-color: rgb(190, 162, 53);
+}
+.prvilearn{
+    color: rgb(190, 162, 53);
+}
+.prvilearn:hover{
+    background-color: rgb(190, 162, 53);
+    border: 5px solid white;
+    color: white;
+    transition: 300ms;
+}
+.box2{
+    background-color: rgb(85, 85, 118);
+}
+.drugilearn{
+    color: rgb(85, 85, 118);
+}
+.drugilearn:hover{
+    background-color: rgb(85, 85, 118);
+    border: 5px solid white;
+    color: white;
+    transition: 300ms;
+}
+.box3{
+    background-color: rgb(61, 61, 84);
+    border-radius: 0 20px 20px 0;
+}
+.trecilearn{
+    color: rgb(61, 61, 84);
+}
+.trecilearn:hover{
+    background-color: rgb(61, 61, 84);
+    border: 5px solid white;
+    color: white;
+    transition: 300ms;
+}
+@media screen and (max-width: 1368px){
+    #box{
+        width: 30%;
+    }
+    .kontejner{
+        padding-top: 16vh;
+    }
+}
+@media screen and (max-width: 768px) {
+    .prvilearn{
+        transform: translate(0, -30px);
+    }
+    .drugilearn{
+        transform: translate(0, -6px);
+    }
+    .trecilearn{
+        transform: translate(0, -26px);
+    }
+}
+@media screen and (max-width: 712px){
+    .drugilearn{
+        transform: translate(0, -26px);
+    }
+    .trecilearn{
+        transform: translate(0, -45px);
+    }
+}
+@media screen and (max-width: 667px){
+    .kontejner{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 200px;
+    }
+    #box{
+        width: 80%;
+    }
+    .box1{
+        border-radius: 20px 20px 0 0;
+    }
+    .box3{
+        border-radius: 0 0 20px 20px;
+    }
+}
+@media screen and (max-height: 412px){
+    .kontejner{
+        padding-top: 0;
+    }
+    h1{
+        padding: 12px;
+        padding-left: 24px;
+    }
+    img{
+        padding-left: 185px;
+    }
+}
